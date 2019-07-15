@@ -1,0 +1,43 @@
+@import '../../../../utils/styles/all';
+
+#CenterAvatar {
+  display: none;
+  visibility: hidden;
+
+  @media all and (min-width: 1280px) {
+    @include positionFixed($top: 50%, $left: 50%);
+    @include transform(translate(-50%, -50%) scale(0));
+    @include border-radius(50%);
+    @include transition($prop: all, $time: 0.3s);
+
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+
+    background: rgba($color-charcoal-base, 0.15);
+    width: 190px;
+    height: 190px;
+    z-index: 100;
+    text-align: center;
+    opacity: 0;
+    display: block;
+    visibility: visible;
+
+    img {
+      @include border-radius(50%);
+
+      border: 8px solid white;
+      margin-top: 12px;
+    }
+  }
+}
+
+#CenterAvatar.reveal-center-avatar {
+  @media all and (min-width: 1280px) {
+    @include transform(translate(-50%, -50%) scale(1));
+
+    opacity: 1;
+  }
+}

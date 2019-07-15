@@ -1,0 +1,68 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#DownloadAppButton {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-border-radius: 56px;
+  -moz-border-radius: 56px;
+  border-radius: 56px;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  background: white;
+  padding: 16px;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2);
+  -moz-box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2);
+  box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2); }
+  @media all and (min-width: 360px) {
+    #DownloadAppButton {
+      padding: 16px 32px; } }
+  @media all and (min-width: 1280px) {
+    #DownloadAppButton {
+      position: fixed;
+      bottom: 8px;
+      left: 50%; } }
+  #DownloadAppButton .badge-wrapper {
+    margin-bottom: 0; }
+  #DownloadAppButton .google-badge {
+    height: 40px;
+    margin: 0 16px; }
+  #DownloadAppButton .download-link-text {
+    color: #5C588D;
+    font-size: 18px;
+    font-family: 'poppins_regular', sans-serif;
+    display: none; }
+    @media all and (min-width: 1280px) {
+      #DownloadAppButton .download-link-text {
+        display: block; } }
+  #DownloadAppButton .play-store-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    display: block;
+    z-index: 101; }
+
+#DownloadAppButton:hover {
+  background: #1DC4BD; }
+  #DownloadAppButton:hover .download-link-text {
+    color: white; }

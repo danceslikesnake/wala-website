@@ -1,0 +1,66 @@
+@import '../../../utils/styles/all';
+
+#ColorBars {
+  @include positionAbsolute($top: 0, $left: 0);
+
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: none;
+
+  @media all and (min-width: 1024px){
+    display: block;
+  }
+
+  .bar {
+    @include positionAbsolute($bottom: 0);
+
+    height: 0;
+  }
+
+  .bar1 {
+    @include transition($prop: all, $time: 0.5s, $easing: ease, $delay: 0s);
+
+    width: 88px;
+    left: 0;
+    background: #fff;
+  }
+  .bar2 {
+    @include transition($prop: all, $time: 0.5s, $easing: ease, $delay: 0.1s);
+
+    width: calc(50% - 88px);
+    left: 88px;
+    background: #fff;
+  }
+  .bar3 {
+    @include transition($prop: all, $time: 0.5s, $easing: ease, $delay: 0.15s);
+
+    width: calc(50% - 88px);
+    left: 50%;
+  }
+  .bar3BG {
+    @include transition($prop: all, $time: 0.5s, $easing: ease, $delay: 0.15s);
+    width: calc(50% - 88px);
+    left: 50%;
+    z-index: 3;
+    background: url("../../../utils/images/african-texture.png") center center no-repeat;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .bar4 {
+    @include transition($prop: all, $time: 0.5s, $easing: ease, $delay: 0s);
+
+    width: 88px;
+    left: calc(100% - 88px);
+    background: #fff;
+  }
+
+  .active {
+    height: 100%;
+  }
+
+  .moveUp {
+    bottom: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#MarketGraphic .market-cls-1 {
+  fill: url(#market-linear-gradient); }
+
+#MarketGraphic .market-cls-2 {
+  fill: #fff; }
+
+#MarketGraphic .market-cls-3 {
+  fill: #a5e7e5;
+  opacity: 0.7; }
+
+#MarketGraphic .market-cls-4 {
+  fill: #ff9f1c; }
+
+#MarketGraphic .market-cls-5 {
+  fill: #5d598d; }
+
+#MarketGraphic .market-cls-6 {
+  fill: #1dc4bd; }
+
+#MarketGraphic .market-cls-7 {
+  fill: #049fe7; }
+
+#MarketGraphic .market-cls-8 {
+  fill: #f71735; }

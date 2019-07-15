@@ -1,0 +1,32 @@
+@import '../../../../utils/styles/all';
+
+#NavBar {
+  display: none;
+
+  @media all and (min-width: 1024px){
+    display: block;
+  }
+
+  .desktop-menu-button {
+    @include positionFixed($top: 0, $right: 0);
+
+    width: 88px;
+    height: 88px;
+    z-index: 2001;
+    cursor: pointer;
+    padding-top: 32px;
+    text-align: center;
+    display: block;
+
+    i {
+      @include transition($prop: color, $time: 0.2s);
+
+      color: white;
+      font-size: 32px;
+    }
+  }
+
+  .desktop-menu-button:hover i {
+    color: $color-walateal-base;
+  }
+}

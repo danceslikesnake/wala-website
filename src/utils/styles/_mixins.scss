@@ -1,0 +1,108 @@
+// TYPOGRAPHY
+@mixin caption {
+  font-size: $typescale-step-down-1;
+  line-height: $typescale-step-down-1-lineheight;
+}
+
+@mixin body-text($dense: false) {
+  font-size: $typescale-base;
+  line-height: $typescale-base-lineheight;
+
+  @if $dense {
+    font-size: $typescale-dense-base;
+    line-height: $typescale-dense-base-lineheight;
+  }
+}
+
+@mixin subheadline($dense: false) {
+  font-size: $typescale-step-up-1;
+  line-height: $typescale-step-up-1-lineheight;
+
+  @if $dense {
+    font-size: $typescale-dense-step-up-1;
+    line-height: $typescale-dense-step-up-1-lineheight;
+  }
+}
+
+@mixin headline($dense: false) {
+  font-size: $typescale-step-up-2;
+  line-height: $typescale-step-up-2-lineheight;
+
+  @if $dense {
+    font-size: $typescale-dense-step-up-2;
+    line-height: $typescale-dense-step-up-2-lineheight;
+  }
+}
+
+// HELPERS
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null, $cover: false, $center: false) {
+  position: $position;
+  top: if($cover, 0, $top);
+  right: if($cover, 0, $right);
+  bottom:if($cover, 0, $bottom);
+  left: if($cover, 0, $left);
+
+  @if $center {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin positionAbsolute($args...) {
+  @include position(absolute, $args...);
+}
+
+@mixin positionRelative($args...) {
+  @include position(relative, $args...);
+}
+
+@mixin positionFixed($args...) {
+  @include position(fixed, $args...);
+}
+
+@mixin transition($prop, $time, $easing: ease, $delay: 0s) {
+  -webkit-transition: $prop $time $easing $delay;
+  -moz-transition: $prop $time $easing $delay;
+  -ms-transition: $prop $time $easing $delay;
+  -o-transition: $prop $time $easing $delay;
+  transition: $prop $time $easing $delay;
+}
+
+@mixin transform($method) {
+  -webkit-transform: $method;
+  -moz-transform: $method;
+  -ms-transform: $method;
+  -o-transform: $method;
+  transform: $method;
+}
+
+@mixin border-radius($amount) {
+  -webkit-border-radius: $amount;
+  -moz-border-radius: $amount;
+  border-radius: $amount;
+}
+
+@mixin horizontalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(left, $color1 0%,$color2 100%);
+  background: linear-gradient(to right, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
+}
+@mixin verticalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(top, $color1 0%,$color2 100%);
+  background: linear-gradient(to bottom, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
+}
+@mixin downDiagonalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(-45deg, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(-45deg, $color1 0%,$color2 100%);
+  background: linear-gradient(135deg, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
+}

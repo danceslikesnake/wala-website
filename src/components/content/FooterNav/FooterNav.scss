@@ -1,0 +1,131 @@
+@import '../../../utils/styles/all';
+
+#FooterNav {
+  position: relative;
+
+  @media all and (min-width: 1024px){
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .desktop-footer-nav-wrapper {
+    @include transition($prop: opacity, $time: 0.2s);
+
+    opacity: 0;
+  }
+
+  .reveal-desktop-footer-nav {
+    opacity: 1;
+  }
+
+  .footer-nav {
+    @include positionAbsolute($bottom: 32px, $left: 112px, $right: 112px);
+
+    @media all and (max-width: 1023px){
+      display: none;
+    }
+
+    .level-item {
+      @include caption();
+
+      padding: 0 16px;
+      text-transform: uppercase;
+      font-family: 'proxima_nova_semibold', sans-serif;
+      color: $color-silver;
+      z-index: 2;
+
+      a {
+        @include transition($prop: color, $time: 0.2s);
+
+        color: white;
+      }
+      a:hover {
+        color: $color-walateal-base;
+      }
+    }
+  }
+
+  .footer-nav-mobile {
+    margin: 0 0 208px 0;
+    padding: 0 24px;
+    position: relative;
+    z-index: 2;
+
+    @media all and (min-width: 1024px){
+      display: none;
+    }
+
+    .level-item {
+      @include caption();
+
+      padding: 0 16px;
+      text-transform: uppercase;
+      font-family: 'proxima_nova_semibold', sans-serif;
+      color: $color-silver;
+      z-index: 2;
+      margin-right: 0;
+      flex: 1;
+
+      a {
+        @include transition($prop: color, $time: 0.2s);
+
+        color: white;
+      }
+      a:hover {
+        color: $color-walateal-base;
+      }
+    }
+
+    .social-links {
+      margin-right: -8px;
+      a {
+        display: inline-block;
+        width: 44px;
+        text-align: center;
+        font-size: 24px;
+        color: $color-scampipurple-tint3;
+      }
+
+      a:hover {
+        color: $color-walateal-base;
+      }
+    }
+  }
+
+  .dala-link {
+    @include positionAbsolute($bottom: 32px, $left: 20px);
+
+    display: none;
+
+    @media all and (min-width: 1024px){
+      display: block;
+    }
+  }
+
+  .dala-logo {
+    height: 40px;
+  }
+
+  .nav-gradient {
+    @include positionAbsolute($bottom: 0, $left: 0, $right: 0);
+    @include verticalGradient(rgba(70,67,106,0), rgba(70,67,106,1), rgba(70,67,106,1));
+
+    height: 200px;
+    z-index: -1;
+  }
+
+  .wala-copyright {
+    @include caption();
+
+    text-transform: uppercase;
+    font-family: 'proxima_nova_semibold', sans-serif;
+    color: $color-silver;
+    text-align: center;
+
+    @media all and (min-width: 1024px){
+      text-align: right;
+    }
+  }
+}

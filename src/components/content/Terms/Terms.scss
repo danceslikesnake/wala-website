@@ -1,0 +1,11 @@
+@import '../../../utils/styles/all';
+
+#Terms {
+  padding-top: 72px;
+  position: relative;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+}

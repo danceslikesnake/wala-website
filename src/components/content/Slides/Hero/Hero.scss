@@ -1,0 +1,73 @@
+@import '../../../../utils/styles/all';
+
+#Hero {
+  position: relative;
+
+  .hero-logo {
+    height: 117px;
+    margin-bottom: -16px;
+
+    @media all and (min-width: 1024px) {
+      height: 176px;
+      margin-bottom: -32px;
+    }
+  }
+
+  h1 {
+    color: white;
+    font-family: 'proxima_nova_extrabold', sans-serif;
+    margin-bottom: 8px;
+    padding: 0 24px;
+    line-height: 32px;
+
+    @media all and (min-width: 360px) {
+      @include subheadline($dense: true);
+    }
+
+    @media all and (min-width: 1024px) {
+      @include headline($dense: true);
+    }
+  }
+
+  h2 {
+    @include body-text($dense: true);
+
+    color: white;
+    font-family: 'proxima_nova_semibold', sans-serif;
+    padding: 0 24px;
+
+    @media all and (min-width: 1024px) {
+      @include subheadline($dense: true);
+    }
+  }
+
+  .act-as-br {
+    display: none;
+
+    @media all and (min-width: 360px){
+      display: block;
+    }
+
+    @media all and (min-width: 1024px){
+      display: none;
+    }
+  }
+}
+
+#Hero:before {
+  @include positionAbsolute($top: 50%, $left: 50%, $center: true);
+  @include border-radius($amount: 50%);
+
+  display: block;
+  content: "";
+  width: 324px;
+  height: 324px;
+  background: $color-walateal-base;
+  opacity: 0.8;
+  z-index: -1;
+
+  @media all and (min-width: 1024px) {
+    width: 454px;
+    height: 454px;
+  }
+}

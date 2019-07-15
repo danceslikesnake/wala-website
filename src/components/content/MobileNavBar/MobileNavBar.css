@@ -1,0 +1,29 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#MobileNavBar {
+  background: white;
+  height: 52px;
+  -webkit-box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2);
+  -moz-box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2);
+  box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2); }
+  #MobileNavBar .level-left img {
+    margin-left: 16px; }
+  #MobileNavBar .level-right a {
+    margin-right: 16px;
+    color: #1DC4BD; }
+  #MobileNavBar .mobile-nav-logo {
+    height: 26px; }
+
+.headroom-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1001; }
+  @media all and (min-width: 1024px) {
+    .headroom-wrapper {
+      display: none; } }

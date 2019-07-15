@@ -1,0 +1,21 @@
+@import '../../../../utils/styles/all';
+
+.nav-line {
+  @include positionFixed($top: 0, $bottom: 0);
+  height: 100%;
+  width: 1px;
+  background: $color-silver;
+  opacity: 0.3;
+  z-index: 100;
+  display: none;
+
+  @media all and (min-width: 1024px){
+    display: block;
+  }
+}
+.nav-line.left {
+  left: 88px;
+}
+.nav-line.right {
+  right: 88px;
+}

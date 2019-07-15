@@ -1,0 +1,44 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#EarnGraphicMobile .cls-1 {
+  fill: url(#m-linear-gradient); }
+
+#EarnGraphicMobile .cls-2 {
+  fill: #fff; }
+
+#EarnGraphicMobile .cls-3, #EarnGraphicMobile .cls-8 {
+  fill: #5d598d; }
+
+#EarnGraphicMobile .cls-3 {
+  opacity: 0.7; }
+
+#EarnGraphicMobile .cls-4 {
+  fill: #746fb0; }
+
+#EarnGraphicMobile .cls-5 {
+  fill: #b2b9be; }
+
+#EarnGraphicMobile .cls-6 {
+  fill: url(#m-linear-gradient-2); }
+
+#EarnGraphicMobile .cls-7 {
+  fill: #1dc4bd; }
+
+#EarnGraphicMobile .cls-9 {
+  fill: #908cc0; }
+
+#EarnGraphicMobile .cls-10 {
+  fill: #aca9d0; }
+
+#EarnGraphicMobile .cls-11 {
+  fill: #e0e3e5; }
+
+#EarnGraphicMobile .cls-12 {
+  fill: url(#m-linear-gradient-3); }
+
+#EarnGraphicMobile .cls-13 {
+  fill: url(#m-linear-gradient-4); }

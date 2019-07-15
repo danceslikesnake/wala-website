@@ -1,0 +1,28 @@
+@import '../../../../utils/styles/all';
+
+#SocialButtons {
+  @include positionFixed($right: 0, $bottom: 0);
+
+  z-index: 100;
+  padding-bottom: 16px;
+  display: none;
+
+  @media all and (min-width: 1024px){
+    display: block;
+  }
+
+  a {
+    @include transition($prop: color, $time: 0.2s);
+
+    display: block;
+    width: 88px;
+    text-align: center;
+    font-size: 24px;
+    padding: 16px 0;
+    color: $color-scampipurple-tint3;
+  }
+
+  a:hover {
+    color: $color-walateal-base;
+  }
+}

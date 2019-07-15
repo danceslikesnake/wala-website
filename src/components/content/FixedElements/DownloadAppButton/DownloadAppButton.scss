@@ -1,0 +1,60 @@
+@import '../../../../utils/styles/all';
+
+#DownloadAppButton {
+  @include positionFixed($bottom: 0, $left: 50%);
+  @include transform(translateX(-50%));
+  @include border-radius($amount: 56px);
+  @include transition($prop: all, $time: 0.2s);
+
+  background: white;
+  padding: 16px;
+  z-index: 100;
+
+  -webkit-box-shadow: 0 0 9px 5px rgba(93,89,141,0.20);
+  -moz-box-shadow: 0 0 9px 5px rgba(93,89,141,0.20);
+  box-shadow: 0 0 9px 5px rgba(93,89,141,0.20);
+
+  @media all and (min-width: 360px) {
+    padding: 16px 32px;
+  }
+
+  @media all and (min-width: 1280px) {
+    @include positionFixed($bottom: 8px, $left: 50%);
+  }
+
+  .badge-wrapper {
+    margin-bottom: 0;
+  }
+
+  .google-badge {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .download-link-text {
+    color: $color-scampipurple-shade1;
+    font-size: 18px;
+    font-family: 'poppins_regular', sans-serif;
+    display: none;
+
+    @media all and (min-width: 1280px) {
+      display: block;
+    }
+  }
+
+  .play-store-link {
+    @include positionAbsolute($cover: true);
+    @include transition($prop: all, $time: 0.2s);
+
+    display: block;
+    z-index: 101;
+  }
+}
+
+#DownloadAppButton:hover {
+  background: $color-walateal-base;
+
+  .download-link-text {
+    color: white;
+  }
+}

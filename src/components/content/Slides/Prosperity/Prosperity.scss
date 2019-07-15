@@ -1,0 +1,109 @@
+@import '../../../../utils/styles/all';
+
+#Prosperity {
+  position: relative;
+  background: url('../../../../utils/images/header_bg_med.jpg') center center no-repeat;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  @media all and (min-width: 1024px){
+    background: none;
+  }
+
+  .hero-logo {
+    height: 176px;
+    margin-bottom: -32px;
+  }
+
+  h1 {
+    @include subheadline($dense: true);
+
+    color: white;
+    font-family: 'proxima_nova_extrabold', sans-serif;
+    margin-bottom: 8px;
+    z-index: 1;
+    line-height: 36px;
+
+    @media all and (min-width: 1024px) {
+      @include headline($dense: true);
+    }
+  }
+
+  h2 {
+    @include body-text($dense: true);
+
+    color: white;
+    font-family: 'proxima_nova_semibold', sans-serif;
+    z-index: 2;
+
+    @media all and (min-width: 1024px) {
+      @include subheadline($dense: true);
+    }
+  }
+
+  .act-as-br {
+    @media all and (max-width: 1024px){
+      display: block;
+    }
+  }
+
+  .mobile-add-circle {
+    position: relative;
+    z-index: 2;
+    padding: 144px 0 112px 0;
+    margin-top: 40px;
+
+    @media all and (min-width: 1024px){
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+  .mobile-add-circle:before {
+    @media all and (max-width: 1023px){
+      @include positionAbsolute($top: 50%, $left: 50%, $center: true);
+      @include border-radius($amount: 50%);
+
+      display: block;
+      content: "";
+      width: 324px;
+      height: 324px;
+      background: $color-walateal-base;
+      opacity: 0.8;
+      z-index: -1;
+    }
+  }
+}
+
+#Prosperity:before {
+  @include positionAbsolute($top: 50%, $left: 50%, $center: true);
+  @include border-radius($amount: 50%);
+
+  display: block;
+  content: "";
+  width: 324px;
+  height: 324px;
+  background: $color-walateal-base;
+  opacity: 0.8;
+  z-index: -1;
+
+  @media all and (min-width: 1024px) {
+    width: 454px;
+    height: 454px;
+  }
+}
+
+#Prosperity:after {
+  @include verticalGradient(rgba(93,89,141,0), rgba(93,89,141,1), rgba(93,89,141,1));
+  @include positionAbsolute($top: 0, $left: 0, $right: 0);
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  @media all and (min-width: 1024px){
+    display: none;
+  }
+}

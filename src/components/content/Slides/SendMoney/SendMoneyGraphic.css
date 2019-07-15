@@ -1,0 +1,20 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#SendMoneyGraphic .sendmoney-cls-1 {
+  fill: url(#linear-gradient-sm); }
+
+#SendMoneyGraphic .sendmoney-cls-2 {
+  fill: url(#linear-gradient-sm2); }
+
+#SendMoneyGraphic .sendmoney-cls-3 {
+  fill: url(#linear-gradient-sm3); }
+
+#SendMoneyGraphic .sendmoney-cls-4 {
+  fill: url(#linear-gradient-sm4); }
+
+#SendMoneyGraphic .sendmoney-cls-5 {
+  fill: url(#linear-gradient-sm5); }

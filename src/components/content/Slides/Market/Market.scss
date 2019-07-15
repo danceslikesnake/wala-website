@@ -1,0 +1,29 @@
+@import '../../../../utils/styles/all';
+
+#Market {
+  .market-graphic-wrapper {
+    @include transition($prop: all, $time: 0.5s, $delay: 0.75s);
+
+    opacity: 0;
+    margin-left: 32px;
+    display: none;
+    visibility: hidden;
+
+    @media all and (min-width: 1024px){
+      @include positionAbsolute($left: calc(50% + 40px), $right: 112px, $top: 50%);
+      @include transform(translateY(-50%));
+
+      display: block;
+      visibility: visible;
+    }
+
+    @media all and (min-width: 1280px){
+      @include positionAbsolute($left: calc(50% + 104px), $right: 132px, $top: 50%);
+    }
+  }
+
+  .reveal-market-graphic-wrapper {
+    opacity: 1;
+    margin-left: 0;
+  }
+}

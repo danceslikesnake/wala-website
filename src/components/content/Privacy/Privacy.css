@@ -1,0 +1,13 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#Privacy {
+  padding-top: 72px;
+  position: relative; }
+  @media all and (min-width: 1024px) {
+    #Privacy {
+      padding-top: 96px;
+      padding-bottom: 120px; } }

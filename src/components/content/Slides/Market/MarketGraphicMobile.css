@@ -1,0 +1,30 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#MarketGraphicMobile .cls-1 {
+  fill: url(#mm-linear-gradient); }
+
+#MarketGraphicMobile .cls-2 {
+  fill: #fff; }
+
+#MarketGraphicMobile .cls-3 {
+  fill: #a5e7e5;
+  opacity: 0.7; }
+
+#MarketGraphicMobile .cls-4 {
+  fill: #ff9f1c; }
+
+#MarketGraphicMobile .cls-5 {
+  fill: #5d598d; }
+
+#MarketGraphicMobile .cls-6 {
+  fill: #1dc4bd; }
+
+#MarketGraphicMobile .cls-7 {
+  fill: #049fe7; }
+
+#MarketGraphicMobile .cls-8 {
+  fill: #f71735; }

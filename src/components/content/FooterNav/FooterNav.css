@@ -1,0 +1,117 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#FooterNav {
+  position: relative; }
+  @media all and (min-width: 1024px) {
+    #FooterNav {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
+  #FooterNav .desktop-footer-nav-wrapper {
+    -webkit-transition: opacity 0.2s ease 0s;
+    -moz-transition: opacity 0.2s ease 0s;
+    -ms-transition: opacity 0.2s ease 0s;
+    -o-transition: opacity 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s;
+    opacity: 0; }
+  #FooterNav .reveal-desktop-footer-nav {
+    opacity: 1; }
+  #FooterNav .footer-nav {
+    position: absolute;
+    right: 112px;
+    bottom: 32px;
+    left: 112px; }
+    @media all and (max-width: 1023px) {
+      #FooterNav .footer-nav {
+        display: none; } }
+    #FooterNav .footer-nav .level-item {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 0 16px;
+      text-transform: uppercase;
+      font-family: 'proxima_nova_semibold', sans-serif;
+      color: #E0E3E5;
+      z-index: 2; }
+      #FooterNav .footer-nav .level-item a {
+        -webkit-transition: color 0.2s ease 0s;
+        -moz-transition: color 0.2s ease 0s;
+        -ms-transition: color 0.2s ease 0s;
+        -o-transition: color 0.2s ease 0s;
+        transition: color 0.2s ease 0s;
+        color: white; }
+      #FooterNav .footer-nav .level-item a:hover {
+        color: #1DC4BD; }
+  #FooterNav .footer-nav-mobile {
+    margin: 0 0 208px 0;
+    padding: 0 24px;
+    position: relative;
+    z-index: 2; }
+    @media all and (min-width: 1024px) {
+      #FooterNav .footer-nav-mobile {
+        display: none; } }
+    #FooterNav .footer-nav-mobile .level-item {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 0 16px;
+      text-transform: uppercase;
+      font-family: 'proxima_nova_semibold', sans-serif;
+      color: #E0E3E5;
+      z-index: 2;
+      margin-right: 0;
+      flex: 1; }
+      #FooterNav .footer-nav-mobile .level-item a {
+        -webkit-transition: color 0.2s ease 0s;
+        -moz-transition: color 0.2s ease 0s;
+        -ms-transition: color 0.2s ease 0s;
+        -o-transition: color 0.2s ease 0s;
+        transition: color 0.2s ease 0s;
+        color: white; }
+      #FooterNav .footer-nav-mobile .level-item a:hover {
+        color: #1DC4BD; }
+    #FooterNav .footer-nav-mobile .social-links {
+      margin-right: -8px; }
+      #FooterNav .footer-nav-mobile .social-links a {
+        display: inline-block;
+        width: 44px;
+        text-align: center;
+        font-size: 24px;
+        color: #C7C5DF; }
+      #FooterNav .footer-nav-mobile .social-links a:hover {
+        color: #1DC4BD; }
+  #FooterNav .dala-link {
+    position: absolute;
+    bottom: 32px;
+    left: 20px;
+    display: none; }
+    @media all and (min-width: 1024px) {
+      #FooterNav .dala-link {
+        display: block; } }
+  #FooterNav .dala-logo {
+    height: 40px; }
+  #FooterNav .nav-gradient {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #46436a;
+    background: -moz-linear-gradient(top, rgba(70, 67, 106, 0) 0%, #46436a 100%);
+    background: -webkit-linear-gradient(top, rgba(70, 67, 106, 0) 0%, #46436a 100%);
+    background: linear-gradient(to bottom, rgba(70, 67, 106, 0) 0%, #46436a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
+    height: 200px;
+    z-index: -1; }
+  #FooterNav .wala-copyright {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: 'proxima_nova_semibold', sans-serif;
+    color: #E0E3E5;
+    text-align: center; }
+    @media all and (min-width: 1024px) {
+      #FooterNav .wala-copyright {
+        text-align: right; } }

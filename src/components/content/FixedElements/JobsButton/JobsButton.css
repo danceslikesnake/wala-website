@@ -1,0 +1,51 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#JobsButton {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -ms-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  -webkit-border-radius: 56px;
+  -moz-border-radius: 56px;
+  border-radius: 56px;
+  background: white;
+  padding: 16px;
+  z-index: 99;
+  color: #1DC4BD;
+  font-family: 'proxima_nova_extrabold', sans-serif;
+  font-size: 18px; }
+  @media all and (min-width: 360px) {
+    #JobsButton {
+      padding: 16px 32px; } }
+  @media all and (min-width: 1280px) {
+    #JobsButton {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      font-size: 32px; } }
+
+#JobsButton:hover {
+  background: #1DC4BD;
+  color: white; }
+
+.jobs-button-reveal {
+  bottom: 112px !important;
+  -webkit-box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2);
+  -moz-box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2);
+  box-shadow: 0 0 9px 5px rgba(93, 89, 141, 0.2); }
+  @media all and (min-width: 1280px) {
+    .jobs-button-reveal {
+      bottom: 120px !important; } }

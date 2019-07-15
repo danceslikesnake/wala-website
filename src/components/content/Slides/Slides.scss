@@ -1,0 +1,254 @@
+@import '../../../utils/styles/all';
+
+#Slides {
+  @media all and (min-width: 1024px){
+    @include positionFixed($cover: true);
+    z-index: 99;
+  }
+
+  .section {
+    padding: 0;
+
+    .content-wrapper {
+      background: white;
+
+      @media all and (min-width: 1024px){
+        width: 50%;
+        background: none;
+      }
+
+      .content-width {
+        margin: 0 auto;
+        padding: 0 24px;
+
+        @media all and (min-width: 1024px){
+          padding: 0 0 0 40px;
+          width: 320px;
+        }
+        @media all and (min-width: 1280px) {
+          padding: 0 0 0 40px;
+          width: 40%;
+          min-width: 440px;
+        }
+        @media all and (min-width: 1366px) {
+          padding: 0;
+        }
+
+        h3 {
+          @include subheadline($dense: true);
+          @include transition($prop: all, $time: 0.5s, $delay: 0.3s);
+
+          font-family: 'proxima_nova_extrabold', sans-serif;
+          color: $color-scampipurple-shade1;
+          text-align: center;
+          margin-bottom: 16px;
+          line-height: 32px;
+          padding-top: 24px;
+
+          @media all and (min-width: 1024px){
+            @include headline($dense: true);
+
+            line-height: 44px;
+            margin-bottom: 24px;
+            margin-left: -32px;
+            opacity: 0;
+            text-align: left;
+            padding-top: 0;
+          }
+        }
+
+        .reveal-h3 {
+          @media all and (min-width: 1024px){
+            opacity: 1;
+            margin-left: 0;
+          }
+        }
+
+        p {
+          @include body-text($dense: true);
+          @include transition($prop: all, $time: 0.5s, $delay: 0.3s);
+
+          text-align: center;
+          padding-bottom: 24px;
+
+          @media all and (min-width: 1024px){
+            @include body-text;
+            opacity: 0;
+            text-align: left;
+            padding-bottom: 0;
+            margin-left: -32px;
+          }
+        }
+
+        .reveal-p {
+          @media all and (min-width: 1024px){
+            opacity: 1;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .mobile-content-image {
+      position: relative;
+      padding: 20px 20px 20px 0;
+
+      @media all and (min-width: 1024px){
+        display: none;
+      }
+
+      .pixel-mobile-profile {
+        @include positionAbsolute($top: 50%, $bottom: 0);
+        @include transform(translateY(-50%));
+
+        width: 50%;
+        margin-left: -64px;
+        margin-top: -32px;
+
+        @media all and (min-width: 600px){
+          margin-left: -96px;
+        }
+      }
+
+      .pixel-mobile-profile.add-extra-margin-mobile {
+        margin-top: -32px;
+
+        @media all and (min-width: 600px){
+          margin-top: -56px;
+        }
+      }
+    }
+
+    .mobile-content-image.tealBg {
+      background: $color-walateal-base url('../../../utils/images/african-texture.png') center center no-repeat;
+
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+    .mobile-content-image.blueBg {
+      background: $color-curiousblue-base url('../../../utils/images/african-texture.png') center center no-repeat;
+
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+    .mobile-content-image.purpleBg {
+      background: $color-scampipurple-base url('../../../utils/images/african-texture.png') center center no-repeat;
+
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+  }
+
+  .pixel-wrapper {
+    @include positionAbsolute($left: calc(50% - 136px), $top: 50%);
+    @include transform(translateY(-50%));
+
+    z-index: 50;
+    width: 50%;
+    display: none;
+    visibility: hidden;
+
+    @media all and (min-width: 1024px){
+      display: block;
+      visibility: visible;
+    }
+
+    @media all and (min-width: 1280px){
+      @include positionAbsolute($left: calc(50% + 24px), $top: 50%);
+    }
+
+    .pixel {
+      @include transition($prop: all, $time: 0.5s, $delay: 0.5s);
+
+      width: 37.65625%;
+      max-width: 482px;
+      margin-top: 64px;
+      opacity: 0;
+    }
+
+    .reveal-pixel {
+      opacity: 1;
+      margin-top: 0;
+    }
+
+    .show-pixel-on-mobile {
+      display: block;
+      visibility: visible;
+
+      @media all and (min-width: 1280px){
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    .show-pixel-on-desktop {
+      display: none;
+      visibility: hidden;
+
+      @media all and (min-width: 1280px){
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+/* this is appended outside of the #Slides scope */
+#fp-nav.fp-right {
+  right: 26px;
+}
+#fp-nav {
+  ul {
+    li {
+      height: 32px;
+      width: 24px;
+      margin: 8px;
+
+      a.active {
+        cursor: default;
+      }
+
+      a span {
+        background: $color-silver;
+        width: 8px;
+        height: 8px;
+      }
+      a.active span {
+        width: 16px;
+        height: 16px;
+        background: $color-walateal-base;
+      }
+    }
+    li:hover {
+      a span {
+        width: 16px;
+        height: 16px;
+        margin: -5px 0 0 -5px
+      }
+      a.active span {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+#fp-nav ul li .fp-tooltip.fp-right {
+  @include border-radius(8px);
+  @include horizontalGradient($color-walateal-base, $color-scampipurple-base, $color-walateal-base);
+
+  right: 88px;
+  padding: 0 16px;
+  font-family: 'proxima_nova_extrabold', sans-serif;
+
+  -webkit-box-shadow: $layout-elevation-3;
+  -moz-box-shadow: $layout-elevation-3;
+  box-shadow: $layout-elevation-3;
+}
+
+.fullpage-wrapper {
+  z-index: 10;
+}

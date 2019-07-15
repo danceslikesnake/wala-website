@@ -1,0 +1,21 @@
+@import '../../../utils/styles/all';
+
+#BackgroundImage {
+  background: url('../../../utils/images/header_bg_med.jpg') center center no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  @media all and (min-width: 1367px){
+    background: url('../../../utils/images/header_bg_full.jpg') center center no-repeat;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}

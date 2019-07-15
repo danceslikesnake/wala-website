@@ -1,0 +1,25 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#NavIndicator {
+  position: fixed;
+  left: 88px;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4;
+  -webkit-transition: all 0.3s ease 0.05s;
+  -moz-transition: all 0.3s ease 0.05s;
+  -ms-transition: all 0.3s ease 0.05s;
+  -o-transition: all 0.3s ease 0.05s;
+  transition: all 0.3s ease 0.05s;
+  width: 4px;
+  height: 20%;
+  z-index: 100;
+  background: white;
+  display: none; }
+  @media all and (min-width: 1024px) {
+    #NavIndicator {
+      display: block; } }

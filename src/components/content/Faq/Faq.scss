@@ -1,0 +1,97 @@
+@import '../../../utils/styles/all';
+
+#Faq {
+  padding-top: 72px;
+  position: relative;
+
+  @media all and (min-width: 1024px) {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .question-wrapper {
+    @include border-radius(8px);
+
+    background: white;
+    width: 90%;
+    max-width: 720px;
+    cursor: pointer;
+    padding: 16px;
+    margin: 0 auto 8px auto;
+
+    -webkit-box-shadow: $layout-elevation-3;
+    -moz-box-shadow: $layout-elevation-3;
+    box-shadow: $layout-elevation-3;
+
+    .level {
+      margin-bottom: 0;
+      width: 100%;
+    }
+    .question-number {
+      @include border-radius(50%);
+
+      font-family: 'poppins_medium', sans-serif;
+      color: $color-scampipurple-shade1;
+      border: 4px solid $color-walateal-base;
+      text-align: center;
+      padding-top: 4px;
+      width: 48px;
+      height: 48px;
+    }
+    .question {
+      font-family: 'poppins_medium', sans-serif;
+      color: $color-scampipurple-shade1;
+      max-width: 200px;
+      font-size: $typescale-dense-base;
+      line-height: $typescale-dense-base-lineheight;
+
+      @media all and (min-width: 400px) {
+        max-width: 220px;
+      }
+
+      @media all and (min-width: 600px) {
+        max-width: 400px;
+      }
+
+      @media all and (min-width: 1024px) {
+        font-size: $typescale-base;
+        line-height: $typescale-base-lineheight;
+        max-width: 600px;
+      }
+    }
+    .level-right i {
+      color: $color-walateal-base;
+    }
+    .answer {
+      @include body-text($dense: true);
+      @include border-radius(8px);
+
+      padding: 16px 16px 0 16px;
+      background: #f3f4f5;
+      margin-top: 16px;
+      display: none;
+
+      p {
+        padding-bottom: 16px;
+      }
+
+      ul {
+        padding-bottom: 16px;
+        padding-left: 32px;
+
+        li {
+          list-style: disc;
+        }
+      }
+    }
+    .reveal-answer {
+      display: block;
+    }
+  }
+  .extra-padding-on-mobile {
+    height: 16px;
+    @media all and (min-width: 1024px) {
+      display: none;
+    }
+  }
+}

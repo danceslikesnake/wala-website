@@ -1,0 +1,122 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#Prosperity {
+  position: relative;
+  background: url("../../../../utils/images/header_bg_med.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  @media all and (min-width: 1024px) {
+    #Prosperity {
+      background: none; } }
+  #Prosperity .hero-logo {
+    height: 176px;
+    margin-bottom: -32px; }
+  #Prosperity h1 {
+    font-size: 32px;
+    line-height: 56px;
+    font-size: 24px;
+    line-height: 44px;
+    color: white;
+    font-family: 'proxima_nova_extrabold', sans-serif;
+    margin-bottom: 8px;
+    z-index: 1;
+    line-height: 36px; }
+    @media all and (min-width: 1024px) {
+      #Prosperity h1 {
+        font-size: 56px;
+        line-height: 104px;
+        font-size: 44px;
+        line-height: 80px; } }
+  #Prosperity h2 {
+    font-size: 18px;
+    line-height: 32px;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    font-family: 'proxima_nova_semibold', sans-serif;
+    z-index: 2; }
+    @media all and (min-width: 1024px) {
+      #Prosperity h2 {
+        font-size: 32px;
+        line-height: 56px;
+        font-size: 24px;
+        line-height: 44px; } }
+  @media all and (max-width: 1024px) {
+    #Prosperity .act-as-br {
+      display: block; } }
+  #Prosperity .mobile-add-circle {
+    position: relative;
+    z-index: 2;
+    padding: 144px 0 112px 0;
+    margin-top: 40px; }
+    @media all and (min-width: 1024px) {
+      #Prosperity .mobile-add-circle {
+        padding: 0;
+        margin-top: 0; } }
+  @media all and (max-width: 1023px) {
+    #Prosperity .mobile-add-circle:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      display: block;
+      content: "";
+      width: 324px;
+      height: 324px;
+      background: #1DC4BD;
+      opacity: 0.8;
+      z-index: -1; } }
+
+#Prosperity:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  content: "";
+  width: 324px;
+  height: 324px;
+  background: #1DC4BD;
+  opacity: 0.8;
+  z-index: -1; }
+  @media all and (min-width: 1024px) {
+    #Prosperity:before {
+      width: 454px;
+      height: 454px; } }
+
+#Prosperity:after {
+  background: #5d598d;
+  background: -moz-linear-gradient(top, rgba(93, 89, 141, 0) 0%, #5d598d 100%);
+  background: -webkit-linear-gradient(top, rgba(93, 89, 141, 0) 0%, #5d598d 100%);
+  background: linear-gradient(to bottom, rgba(93, 89, 141, 0) 0%, #5d598d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+  @media all and (min-width: 1024px) {
+    #Prosperity:after {
+      display: none; } }

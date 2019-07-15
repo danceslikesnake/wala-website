@@ -1,0 +1,39 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#SendMoney .send-money-graphic-wrapper {
+  -webkit-transition: all 0.5s ease 0.75s;
+  -moz-transition: all 0.5s ease 0.75s;
+  -ms-transition: all 0.5s ease 0.75s;
+  -o-transition: all 0.5s ease 0.75s;
+  transition: all 0.5s ease 0.75s;
+  opacity: 0;
+  margin-right: 32px;
+  display: none;
+  visibility: hidden; }
+  @media all and (min-width: 1024px) {
+    #SendMoney .send-money-graphic-wrapper {
+      position: absolute;
+      top: 50%;
+      right: 112px;
+      left: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block;
+      visibility: visible; } }
+  @media all and (min-width: 1280px) {
+    #SendMoney .send-money-graphic-wrapper {
+      position: absolute;
+      top: 50%;
+      right: 132px;
+      left: 50%; } }
+
+#SendMoney .reveal-send-money-graphic-wrapper {
+  opacity: 1;
+  margin-right: 0; }

@@ -1,0 +1,32 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#NavBar {
+  display: none; }
+  @media all and (min-width: 1024px) {
+    #NavBar {
+      display: block; } }
+  #NavBar .desktop-menu-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 88px;
+    height: 88px;
+    z-index: 2001;
+    cursor: pointer;
+    padding-top: 32px;
+    text-align: center;
+    display: block; }
+    #NavBar .desktop-menu-button i {
+      -webkit-transition: color 0.2s ease 0s;
+      -moz-transition: color 0.2s ease 0s;
+      -ms-transition: color 0.2s ease 0s;
+      -o-transition: color 0.2s ease 0s;
+      transition: color 0.2s ease 0s;
+      color: white;
+      font-size: 32px; }
+  #NavBar .desktop-menu-button:hover i {
+    color: #1DC4BD; }

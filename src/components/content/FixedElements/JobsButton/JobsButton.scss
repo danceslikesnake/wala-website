@@ -1,0 +1,41 @@
+@import '../../../../utils/styles/all';
+
+#JobsButton {
+  @include positionFixed($bottom: 24px, $left: 50%);
+  @include transform(translateX(-50%));
+  @include transition($prop: all, $time: 0.2s);
+  @include border-radius($amount: 56px);
+
+  background: white;
+  padding: 16px;
+  z-index: 99;
+  color: $color-walateal-base;
+  font-family: 'proxima_nova_extrabold', sans-serif;
+  font-size: $typescale-base;
+
+  @media all and (min-width: 360px) {
+    padding: 16px 32px;
+  }
+
+  @media all and (min-width: 1280px) {
+    @include positionFixed($bottom: 32px, $left: 50%);
+
+    font-size: $typescale-step-up-1;
+  }
+}
+
+#JobsButton:hover {
+  background: $color-walateal-base;
+  color: white;
+}
+
+.jobs-button-reveal {
+  bottom: 112px !important;
+  -webkit-box-shadow: 0 0 9px 5px rgba(93,89,141,0.20);
+  -moz-box-shadow: 0 0 9px 5px rgba(93,89,141,0.20);
+  box-shadow: 0 0 9px 5px rgba(93,89,141,0.20);
+
+  @media all and (min-width: 1280px) {
+    bottom: 120px !important;
+  }
+}

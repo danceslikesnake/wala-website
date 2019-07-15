@@ -1,0 +1,18 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#BackgroundGradient {
+  background: #5d598d;
+  background: -moz-linear-gradient(top, rgba(93, 89, 141, 0) 0%, #5d598d 100%);
+  background: -webkit-linear-gradient(top, rgba(93, 89, 141, 0) 0%, #5d598d 100%);
+  background: linear-gradient(to bottom, rgba(93, 89, 141, 0) 0%, #5d598d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0; }

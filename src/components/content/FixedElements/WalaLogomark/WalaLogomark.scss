@@ -1,0 +1,30 @@
+@import '../../../../utils/styles/all';
+
+#WalaLogomark {
+  @include positionFixed($top: 32px, $left: 16px);
+
+  width: 57.6px;
+  height: 32px;
+  z-index: 100;
+  display: none;
+
+  @media all and (min-width: 1024px){
+    display: block;
+  }
+
+  polygon {
+    @include transition($prop: all, $time: 0.4s);
+  }
+
+  .white {
+    .st0 {fill: #FFFFFF;}
+    .st1 {
+      fill: #FFFFFF;
+      opacity: 0.6;
+    }
+  }
+  .green {
+    .st0{fill:#1DC4BD;}
+    .st1{fill:#25969B;}
+  }
+}

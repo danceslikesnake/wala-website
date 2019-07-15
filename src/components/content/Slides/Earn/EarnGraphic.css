@@ -1,0 +1,44 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#EarnGraphic .cls-1 {
+  fill: url(#linear-gradient); }
+
+#EarnGraphic .cls-2 {
+  fill: #fff; }
+
+#EarnGraphic .cls-3, #EarnGraphic .cls-8 {
+  fill: #5d598d; }
+
+#EarnGraphic .cls-3 {
+  opacity: 0.7; }
+
+#EarnGraphic .cls-4 {
+  fill: #746fb0; }
+
+#EarnGraphic .cls-5 {
+  fill: #b2b9be; }
+
+#EarnGraphic .cls-6 {
+  fill: url(#linear-gradient-2); }
+
+#EarnGraphic .cls-7 {
+  fill: #1dc4bd; }
+
+#EarnGraphic .cls-9 {
+  fill: #908cc0; }
+
+#EarnGraphic .cls-10 {
+  fill: #aca9d0; }
+
+#EarnGraphic .cls-11 {
+  fill: #e0e3e5; }
+
+#EarnGraphic .cls-12 {
+  fill: url(#linear-gradient-3); }
+
+#EarnGraphic .cls-13 {
+  fill: url(#linear-gradient-4); }

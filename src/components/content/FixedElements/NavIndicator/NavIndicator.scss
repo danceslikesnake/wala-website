@@ -1,0 +1,17 @@
+@import '../../../../utils/styles/all';
+
+#NavIndicator {
+  @include positionFixed($left: 88px);
+  @include border-radius($amount: 4);
+  @include transition($prop: all, $time: 0.3s, $delay: 0.05s);
+
+  width: 4px;
+  height: 20%;
+  z-index: 100;
+  background: white;
+  display: none;
+  
+  @media all and (min-width: 1024px){
+    display: block;
+  }
+}

@@ -1,0 +1,30 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+#SocialButtons {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  padding-bottom: 16px;
+  display: none; }
+  @media all and (min-width: 1024px) {
+    #SocialButtons {
+      display: block; } }
+  #SocialButtons a {
+    -webkit-transition: color 0.2s ease 0s;
+    -moz-transition: color 0.2s ease 0s;
+    -ms-transition: color 0.2s ease 0s;
+    -o-transition: color 0.2s ease 0s;
+    transition: color 0.2s ease 0s;
+    display: block;
+    width: 88px;
+    text-align: center;
+    font-size: 24px;
+    padding: 16px 0;
+    color: #C7C5DF; }
+  #SocialButtons a:hover {
+    color: #1DC4BD; }

@@ -1,0 +1,36 @@
+@import '../../../../utils/styles/all';
+
+#MarketGraphic {
+  .market-cls-1 {
+    fill: url(#market-linear-gradient);
+  }
+
+  .market-cls-2 {
+    fill: #fff;
+  }
+
+  .market-cls-3 {
+    fill: #a5e7e5;
+    opacity: 0.7;
+  }
+
+  .market-cls-4 {
+    fill: #ff9f1c;
+  }
+
+  .market-cls-5 {
+    fill: #5d598d;
+  }
+
+  .market-cls-6 {
+    fill: #1dc4bd;
+  }
+
+  .market-cls-7 {
+    fill: #049fe7;
+  }
+
+  .market-cls-8 {
+    fill: #f71735;
+  }
+}
